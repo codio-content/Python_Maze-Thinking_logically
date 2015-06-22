@@ -88,19 +88,19 @@
   },
   {
    "id": "9d064457-5295-4cd3-cb62-453eec984c5c",
-   "title": "Javascript",
+   "title": "Python",
    "files": [
     {
      "path": "#tabs",
      "action": "close"
     },
     {
-     "path": "public/content/js/js-1.js",
+     "path": "public/content/python/py-1.py",
      "panel": 0,
      "action": "open"
     },
     {
-     "path": "#preview: https://{{domain9500}}/js-1",
+     "path": "#preview: https://{{domain9500}}/py-1",
      "panel": 1,
      "action": "open"
     }
@@ -108,23 +108,23 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Javascript-9d06.md"
+   "content-file": ".guides/content/Python-9d06.md"
   },
   {
    "id": "47154c9e-3372-5c10-fd07-bc557022ae6c",
-   "title": "Javascript Challenge",
+   "title": "Python Challenge",
    "files": [
     {
      "path": "#tabs",
      "action": "close"
     },
     {
-     "path": "public/content/js/js-2.js",
+     "path": "public/content/python/py-2.py",
      "panel": 0,
      "action": "open"
     },
     {
-     "path": "#preview: https://{{domain9500}}/js-2",
+     "path": "#preview: https://{{domain9500}}/py-2",
      "panel": 1,
      "action": "open"
     }
@@ -132,7 +132,7 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Javascript-Challenge-4715.md"
+   "content-file": ".guides/content/Python-Challenge-4715.md"
   },
   {
    "id": "4fa717b6-a1e-936a-5654-38a6d3143a2d",
@@ -315,6 +315,7 @@
  "scripts": [
   "https://code.jquery.com/jquery-2.1.4.min.js",
   "https://mazegame.codio.com/game.js",
-  ".guides/test_static.js"
+  ".guides/test_static.js",
+  "public/skulpt/skulpt.min.js"
  ]
 }

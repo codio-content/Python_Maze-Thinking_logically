@@ -26,13 +26,13 @@ router.get('/commands-3', function(req, res) {
 }); 
 
 // Javascript empty game with monsters
-router.get('/js-1', function(req, res) {
-  res.render('js-1');
+router.get('/py-1', function(req, res) {
+  res.render('py-1');
 }); 
 
 // As above but challenge
-router.get('/js-2', function(req, res) {
-  res.render('js-2');
+router.get('/py-2', function(req, res) {
+  res.render('py-2');
 }); 
 
 // Add objects with coords
@@ -55,18 +55,18 @@ router.get('/commands-7', function(req, res) {
   res.render('commands-7');
 });
 
-// Javascript adding objects
-router.get('/js-3', function(req, res) {
+// Python adding objects
+router.get('/py-3', function(req, res) {
   res.render('js-3');
 });
 
-// Javascript adding objects challenge
-router.get('/js-4', function(req, res) {
+// Python adding objects challenge
+router.get('/py-4', function(req, res) {
   res.render('js-4');
 });
 
-// Javascript final high score challenge
-router.get('/js-5', function(req, res) {
+// Python final high score challenge
+router.get('/py-5', function(req, res) {
   res.render('js-5');
 });
 

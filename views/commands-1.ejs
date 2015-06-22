@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One</title>
+
+    <% include include/game.ejs %>      
+    
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+
+        // Load the user blockly script
+      
+        $.getScript( '/content/blockly/commands-1-b/blockly-gen.js' )
+          .done(function( script, textStatus ) {
+            
+          })
+          .fail(function( jqxhr, settings, exception ) {
+            $( "div.log" ).text( "Triggered ajaxError handler." );
+        });        
+        
+      })
+
+            
+    </script>
+    
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
+</html>

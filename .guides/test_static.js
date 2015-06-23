@@ -1,4 +1,6 @@
 
+
+
 function indexOfCommand(val, j) {
   j = j || 0;
   j = j < 0 ? 0 : j;
@@ -23,6 +25,9 @@ function command(val, j) {
 window.testMode = true;
 
 $(document).ready(function() {
+  
+  importPythonGame();
+  
   window.addEventListener('codio-button-custom', function (env) {
     _commands = [];  
     window.testComplete = false;

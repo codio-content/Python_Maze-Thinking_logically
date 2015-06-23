@@ -8,10 +8,21 @@
 
 <script>
 
-function loadUserScript(fileName) { 
-  $.get(fileName, function(data) {
+function loadUserScript(fileName) {
+  $.get(fileName)
+  .success(function(data) {
+        
+    if(data == 404) {
+      return swal({ 
+        title: "404",
+        text: fileName + " not found",
+        html: false,
+        confirmButtonText: "OK"
+      }); 
+    }
+
     try {        
-      var module = Sk.importMainWithBody("<stdin>", false, data);
+      var module = Sk.importMainWithBody("", false, data);
       
       if (typeof userScriptLoaded !== 'undefined') {
         userScriptLoaded()
@@ -20,11 +31,18 @@ function loadUserScript(fileName) {
     catch(e) {
       swal({ 
         title: "Python Error",
-        text: e.message,
+        text: e.toString(),
         html: false,
         confirmButtonText: "OK"
       }); 
     }
+  }).fail(function(jqxhr, settings, e) {
+    swal({ 
+      title: "Error",
+      text: e.message,
+      html: false,
+      confirmButtonText: "OK"
+    });
   });
 }
   

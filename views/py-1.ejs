@@ -5,9 +5,10 @@
     
     <% include include/game.ejs %>    
  
-    <script>      
-        // Load the user blockly script
-        loadUserScript('/content/py/py-1.py')
+    <script>
+      importPythonGame();
+
+      loadUserScript('/content/py/py-1.py')
     </script>
     
   </head>

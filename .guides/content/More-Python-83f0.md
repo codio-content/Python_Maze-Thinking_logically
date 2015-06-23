@@ -1,9 +1,9 @@
-Now we're going to see how to achieve exactly the same thing with Javascript.
+Now we're going to see how to achieve exactly the same thing with Python.
 
 Take a look at the code on the left. We've put in a few lines to start you off.
 
 ## Arguments
-```javascript
+```python
 addMonster(4, 2)
 ```
 

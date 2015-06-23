@@ -1,23 +1,38 @@
 
-$.getScript(window.location.origin + '/public/content/js/' + window.testEnv.cmd + '.js')
-.done(function (script, status) {
-  console.log(_commands);
-  
-  var iMaze = indexOfCommand('createEmptyMaze');
-  
-  if(iMaze > -1 && player && getGoalCount() == 1 &&
-     tiles[2][2].type == 'wall' &&
-     tiles[6][5].type == 'monster' &&
-     tiles[5][3].type == 'energy' &&
-     tiles[7][4].type == 'energy') {
-    
-    codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.SUCCESS, 'Well done!');
+var fileName = window.location.origin + '/public/content/py/' + window.testEnv.cmd + '.py';
+
+$.get(fileName)
+.success(function(data) {
+
+  if(data == 404) {
+    console.log(exception);
+    codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.INVALID, fileName + ' not found'); 
   }
-  else {
-    codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.FAILURE, 'Not quite right, try again!');
+
+  try {        
+    var module = Sk.importMainWithBody("", false, data);
+
+    var iMaze = indexOfCommand('createEmptyMaze');
+
+    if(iMaze > -1 && player && getGoalCount() == 1 &&
+       tiles[2][2].type == 'wall' &&
+       tiles[6][5].type == 'monster' &&
+       tiles[5][3].type == 'energy' &&
+       tiles[7][4].type == 'energy') {      
+      codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.SUCCESS, 'Well done!');
+    }
+    else {
+      codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.FAILURE, 'Not quite right, try again!');
+    }
+  }
+  catch(exception) {
+    console.log('skulpt exception');
+    console.log(exception);
+    codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.INVALID, exception.toString()); 
   }
 })
-.fail(function (jqxhr, settings, exception) {
+.fail(function(jqxhr, settings, exception) {
+  console.log('jqxhr fail');
   console.log(exception);
   codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.INVALID, exception.message); 
 });

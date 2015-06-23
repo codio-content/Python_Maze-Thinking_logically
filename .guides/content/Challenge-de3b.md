@@ -1,4 +1,4 @@
-Here are the Javascript function names available to you
+Here are the Python function names available to you
 
 - `createEmptyMaze()`
 - `addPlayer()`
@@ -21,7 +21,7 @@ Don't forget to add the 'Create Empty Maze' as the first instruction.
 
 Press the button below once you think you've done it.
 
-{Check it!! | custom}(js-4)
+{Check it!! | custom}(py-4)
 
 |||
 
@@ -30,7 +30,7 @@ Press the button below once you think you've done it.
 
 The ordering of the various "Add" functions is not essential, as long as they come after `createEmptyMaze`.
 
-```javascript
+```python
 createEmptyMaze()
 addWall(2, 2)
 addMonster(6, 5)

@@ -57,17 +57,17 @@ router.get('/commands-7', function(req, res) {
 
 // Python adding objects
 router.get('/py-3', function(req, res) {
-  res.render('js-3');
+  res.render('py-3');
 });
 
 // Python adding objects challenge
 router.get('/py-4', function(req, res) {
-  res.render('js-4');
+  res.render('py-4');
 });
 
 // Python final high score challenge
 router.get('/py-5', function(req, res) {
-  res.render('js-5');
+  res.render('py-5');
 });
 
 module.exports = router;

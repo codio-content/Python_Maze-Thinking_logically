@@ -240,19 +240,19 @@
   },
   {
    "id": "83f05174-dc24-85e0-2d0-3a35818c22b",
-   "title": "More Javascript",
+   "title": "More Python",
    "files": [
     {
      "path": "#tabs",
      "action": "close"
     },
     {
-     "path": "public/content/js/js-3.js",
+     "path": "public/content/py/py-3.py",
      "panel": 0,
      "action": "open"
     },
     {
-     "path": "#preview: https://{{domain9500}}/js-3",
+     "path": "#preview: https://{{domain9500}}/py-3",
      "panel": 1,
      "action": "open"
     }
@@ -260,7 +260,7 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/More-Javascript-83f0.md"
+   "content-file": ".guides/content/More-Python-83f0.md"
   },
   {
    "id": "de3bbb68-33d3-2a39-c8c0-ce1db5b06a54",
@@ -271,12 +271,12 @@
      "action": "close"
     },
     {
-     "path": "public/content/js/js-4.js",
+     "path": "public/content/py/py-4.py",
      "panel": 0,
      "action": "open"
     },
     {
-     "path": "#preview: https://{{domain9500}}/js-4",
+     "path": "#preview: https://{{domain9500}}/py-4",
      "panel": 1,
      "action": "open"
     }
@@ -295,12 +295,12 @@
      "action": "close"
     },
     {
-     "path": "public/content/js/js-5.js",
+     "path": "public/content/py/py-5.py",
      "panel": 0,
      "action": "open"
     },
     {
-     "path": "#preview: https://{{domain9500}}/js-5",
+     "path": "#preview: https://{{domain9500}}/py-5",
      "panel": 1,
      "action": "open"
     }

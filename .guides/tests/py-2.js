@@ -12,7 +12,7 @@ $.get(fileName)
   try {        
     var module = Sk.importMainWithBody("", false, data);
 
-    if(indexOfCommand('createEmptyMaze') > -1 && command('addRandomMonsters')[1] == 3) {
+    if(indexOfCommand('createEmptyMaze') > -1 && indexOfCommand('addRandomMonsters') > -1 && command('addRandomMonsters')[1] == 3) {
       codio.setButtonValue(window.testEnv.id, codio.BUTTON_STATE.SUCCESS, 'Well done!');
     }
     else {

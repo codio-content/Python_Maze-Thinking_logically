@@ -7,23 +7,7 @@ Here are the Python function names available to you
 - `addEnergy()`
 - `addMonster()`
 
-|||challenge
-It's the same challenge as before, so
-
-- create an empty maze
-- add 1 wall at (2,2) 
-- add 1 monsters at (6,5)
-- add 2 energy stores at (5,3) and (7, 4)
-- add the player
-- add the goal
-
-Don't forget to add the 'Create Empty Maze' as the first instruction.
-
-Press the button below once you think you've done it.
-
-{Check it!! | custom}(py-4)
-
-|||
+{Check It!|assessment}(test-2553177547)
 
 |||guidance
 ## Solution
@@ -39,3 +23,5 @@ addEnergy(7, 4)
 addPlayer()
 addGoal()
 ```
+
+|||

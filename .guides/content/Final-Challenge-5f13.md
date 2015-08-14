@@ -8,19 +8,7 @@ Here are the Python function names available to you
 - `addEnergy()`
 - `addMonster()`
 
-|||challenge
-Using Python again, we want you to create a game that meets the following criteria.
-
-1. At least 4 walls.
-1. When you play the game, you need to have achieved a score of at least **10** when you reach the goal.
-
-**Hint:** you will need some extra energy stores in the game to get the score.
-
-When you have played and finished the games, press the button.
-
-{Check It!!|custom}(py-5)
-|||
-
+{Check It!|assessment}(test-1951120184)
 
 |||guidance
 ## Solution
@@ -46,3 +34,5 @@ addEnergy()
 addPlayer()
 addGoal()
 ```
+
+|||

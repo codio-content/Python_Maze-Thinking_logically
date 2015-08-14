@@ -1,19 +1,13 @@
 Here is our first challenge using Python.
 
-|||challenge
-Create an empty maze in Python and add three monsters into it using a **single command** for the monsters . When you are ready, click the button below. Here's a reminder of the instructions.
-
-- createEmptyMaze()
-- addRandomMonsters()
-
-{Check it!! | custom}(py-2)
-
-|||
+{Check It!|assessment}(test-1114805969)
 
 |||guidance
 ## Solution
 
-```javascript
+```python
 createEmptyMaze()
 addRandomMonsters(3)
 ```
+
+|||

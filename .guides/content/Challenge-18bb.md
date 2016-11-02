@@ -1,7 +1,6 @@
 
 {Check It!|assessment}(test-3015285323)
 
-|||
 
 |||guidance
 ## Solution
